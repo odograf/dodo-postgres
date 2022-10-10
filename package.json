@@ -1,4 +1,8 @@
 {
+  "name": "dodo-postgres",
+  "version": "0.0.2",
+  "author": "dodo",
+  "description": "sql/repository builder for PostgresSQl",
   "scripts": {
     "build": "tsc",
     "prebuild": "npm run clean",

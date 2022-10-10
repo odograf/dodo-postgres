@@ -8,7 +8,7 @@ type DBConfig = {
   port?: number
 }
 
-const init = (db_config: DBConfig) => {
+export const init = (db_config: DBConfig) => {
   try {
     const pgp = pgPromise({/* Initialization Options */});
     const connection: IDatabase<any> = pgp({
@@ -25,5 +25,3 @@ const init = (db_config: DBConfig) => {
     throw new Error('connection not working')
   }
 };
-
-module.exports = init;
